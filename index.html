@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soon. | Syntax Production by BSIS 1A</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: 'Avenir', sans-serif;
+        }
+
+        .logo-container {
+            text-align: center;
+        }
+
+        .logo, .text {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .text {
+            margin-top: 10px;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            font-family: 'Avenir', sans-serif;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="https://github.com/printsyntax/printsyntax.github.io/blob/82c0d00744039ab5b5c6b072d2ab7b166e723c1d/SYNTAX_PRODUCTION_LOGO_HIGHDEF.png" alt="Syntax Production Logo" class="logo">
+        <p class="text">Soon.</p>
+    </div>
+
+    <div id="popup" class="popup">
+        <p>Please visit the Syntax Production FB page for more info:</p>
+        <a href="https://www.facebook.com/printSyntaxProduction" target="_blank">https://www.facebook.com/printSyntaxProduction</a>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            document.getElementById('popup').style.display = 'block';
+        }, 3000);
+    </script>
+</body>
+</html>
